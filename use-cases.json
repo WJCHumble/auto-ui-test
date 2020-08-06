@@ -1,0 +1,42 @@
+{
+  "global": {
+    "url": "https://wqs.jd.com/xxx/index.shtml",
+    "pageName": "index",
+    "pageDesc": "首页",
+    "device": "iPhone 7"
+  },
+  "homePageApi": {
+    "id": 1,
+    "module": "home_page_api",
+    "moduleDesc": "首页主接口",
+    "api": "https://wqcoss.jd.com/xxx",
+    "operation": "模拟响应码 500",
+    "expectRules": [
+      "1. 显示异常信息、刷新按钮",
+      "2. 点击刷新按钮，显示异常信息",
+      "3. 恢复网络，点击刷新按钮，显示正常数据"
+    ],
+    "screenshot": [
+      {
+        "name": "normal",
+        "desc": "正常场景"
+      },
+      {
+        "name": "500_cache",
+        "desc": "有缓存-返回500"
+      },
+      {
+        "name": "500_no_cache",
+        "desc": "无缓存-返回500"
+      },
+      {
+        "name": "500_no_cache_reload",
+        "desc": "无缓存-返回500-点击刷新按钮"
+      },
+      {
+        "name": "500_no_cache_recover",
+        "desc": "无缓存-返回500-恢复网络"
+      }
+    ]
+  }
+}
