@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/WJCHumble/auto-ui-test/issues"
   },
-  "homepage": "https://github.com/WJCHumble/auto-ui-test#readme"
+  "homepage": "https://github.com/WJCHumble/auto-ui-test#readme",
+  "devDependencies": {
+    "puppeteer": "^5.2.1"
+  }
 }
